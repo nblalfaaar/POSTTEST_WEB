@@ -1,12 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Connect</title>
 </head>
+
 <body>
-    <h1>halo</h1>
     
+    <header>
+        <h4><i>DreamConnect</i></h4>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#fitur">Fitur</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h1>DreamConnect</h1>
+            <p>Portal Interaktif untuk Fans <strong>NCT Dream</strong></p>
+
+            <figure>
+                <img src="img/home.png" alt="foto grup" width="500">
+                <figcaption>NCT Dream bersama NCTzens</figcaption>
+            </figure>
+            
+            <div>
+                <a href="#register">Gabung Sekarang</a>
+            </div>
+
+            <div>
+                <h2>Kenapa DreamConnect?</h2>
+                <ul>
+                    <li>Koleksi Album & Lagu Lengkap</li>
+                    <li>Info Event & Konser Terbaru</li>
+                    <li>Komunitas Fans Aktif</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="fitur">
+            <h2>Fitur Utama</h2>
+            <section id="album">
+                <h3>Album & Lagu</h3>
+                <article class="album">
+                    <h3>Hot Sauce (2021)</h3>
+                    <img src="img/album hotsauce.jpg" alt="Cover Album Hot Sauce" width="250">
+                    <h4>Tracklist:</h4>
+                    <ol>
+                        <li>Hot Sauce (Title Track)</li>
+                        <li>Dive Into You</li>
+                        <li>Diggity</li>
+                        <li>My Youth</li>
+                        <li>Rocket</li>
+                        <li>Countdown (3, 2, 1)</li>
+                        <li>ANL</li>
+                        <li>Irreplaceable</li>
+                        <li>Be There For You</li>
+                        <li>Rainbow</li>
+                    </ol>
+                    <h4>Music Video:</h4>
+                    <iframe width="400" height="225" 
+                        src="https://www.youtube.com/embed/PkKnp4SdE-w?si=RZ4vKFUTsYdS0uU-" 
+                        title="Hot Sauce MV" 
+                        frameborder="0" 
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </article>
+            </section>
+            
+            <section id="event">
+                <h3>Event & Konser</h3>
+                <p>Ikuti jadwal event, konser, dan fan meeting terbaru.</p>
+                <article>
+                    <h3>The Dream Show 4 : Dreamscape</h3>
+                    <img src="img/konser4.jpg" alt="Poster The Dream Show 4" width="200">
+                    <p><strong>Tanggal:</strong> 28-30 Juni 2024</p>
+                    <p><strong>Lokasi:</strong> Gocheok Sky Dome, Seoul</p>
+                    <p>Konser skala besar ke-4 NCT Dream dengan konsep futuristik dan interaktif.</p>
+                    
+                    <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/jszXE5bySRY?si=mInj2fwo-DIBK5md" 
+                        title="NCT DREAM The Dream Show 4 Teaser" 
+                        frameborder="0" 
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    
+                    <br><br>
+                    <a href="https://www.ticketmaster.com" target="_blank">Beli Tiket</a>
+                </article>
+            </section>
+
+            <section id="postingan">
+                <article>
+                    <h3>Postingan Fans</h3>
+                    <p>Bagikan cerita, fan art, dan pengalamanmu bersama NCT Dream.</p>
+                    <p><a href="#login">Login untuk memulai!</a></p>
+                </article>
+            </section>
+        </section>
+
+        <section id="galeri">
+            <h2>Galeri NCT Dream</h2>
+            <p>Kumpulan momen spesial NCT Dream</p>
+            <figure>
+                <img src="img/the dream show 2.jpg" alt="The Dream Show 2" width="300">
+                <figcaption>The Dream Show 2</figcaption>
+            </figure>
+            <figure>
+                <img src="img/hello future.jpg" alt="Album Hello Future" width="300">
+                <figcaption>Album Hello Future</figcaption>
+            </figure>
+            <figure>
+                <img src="img/galeri1.jpg" alt="Konten 7 Dream" width="300">
+                <figcaption>Konten 7 Dream</figcaption>
+            </figure>
+            <figure>
+                <img src="img/galeri2.jpg" alt="Pemotretan" width="300">
+                <figcaption>Pemotretan</figcaption>
+            </figure>
+        </section>
+
+        <section id="kontak">
+            <h2>Kontak Kami</h2>
+            <p>Punya saran, pertanyaan, atau ingin kolaborasi? Kirim pesanmu di sini</p>
+            <form>
+                <label for="nama">Nama:</label><br>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="nama@email.com"><br><br>
+
+                <label for="subjek">Subjek:</label><br>
+                <input type="text" id="subjek" name="subjek" placeholder="Judul pesan"><br><br>
+
+                <label for="pesan">Pesan:</label><br>
+                <textarea name="pesan" id="pesan" rows="5" cols="40" placeholder="Tulis pesan Anda"></textarea><br><br>
+
+                <label for="kategori">Kategori:</label><br>
+                <select name="kategori" id="kategori">
+                    <option value="saran">Saran</option>
+                    <option value="pertanyaan">Pertanyaan</option>
+                    <option value="kolaborasi">Kolaborasi</option>
+                    <option value="lainnya">Lainnya</option>
+                </select><br><br>
+
+                <button type="submit">Kirim</button>
+                <button type="reset">Reset</button>
+            </form>
+
+            <div>
+                <h3>Hubungi kami</h3>
+                <p>Email: dreamconnect@gmail.com</p>
+                <p>Instagram : @dreamconnect_id</p>
+                <p>X: @dreamconnect_id</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h3>Dream Connect</h3>
+            <p>Portal interaktif untuk berbagi impian, motivasi, dan inspirasi bersama komunitas.</p>
+        </div>
+
+        <div>
+            <h4>Ikuti kami</h4>
+            <p>Email: dreamconnect@gmail.com</p>
+            <p>Instagram : @dreamconnect_id</p>
+            <p>X: @dreamconnect_id</p>
+        </div>
+
+        <div>
+            <p>&copy; 2025 DreamConnect - Portal Fans NCT Dream</p>
+            <p>
+                Referensi Desain: <br>
+                <a href="https://nctdream.stanlyapp.com/fan-club" target="_blank">StanlyApp</a><br>
+                <a href="https://pin.it/1kuea9t1G" target="_blank">Pinterest</a>
+            </p>
+        </div>
+        
+    </footer>
 </body>
 </html>
