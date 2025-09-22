@@ -1,193 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dream Connect</title>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    
+  <body>
     <header>
-        <h4><i>DreamConnect</i></h4>
-        <nav>
-            <ul>
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#fitur">Fitur</a></li>
-                <li><a href="#galeri">Galeri</a></li>
-                <li><a href="#kontak">Kontak</a></li>
-            </ul>
-        </nav>
+      <h4>DreamConnect</h4>
+      <nav class="navbar">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fitur">Fitur</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galeri">Galeri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">Kontak</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    
+
     <main>
-        <section id="home">
-            <h1>DreamConnect</h1>
-            <p>Portal Interaktif untuk Fans <strong>NCT Dream</strong></p>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="row">
+            <!-- Kiri: Teks -->
+            <div class="col left">
+              <h1 class="hero-title">DreamConnect</h1>
+              <p class="hero-subtitle">Portal Interaktif untuk Fans <strong>NCT Dream</strong></p>
 
-            <figure>
-                <img src="img/home.png" alt="foto grup" width="500">
+              <a href="#register" class="btn btn-primary">Gabung Sekarang</a>
+
+              <h2 class="hero-heading">Kenapa DreamConnect?</h2>
+              <ul class="hero-list">
+                <li><i class="fa fa-music"></i> Koleksi Album & Lagu Lengkap</li>
+                <li><i class="fa fa-calendar"></i> Info Event & Konser Terbaru</li>
+                <li><i class="fa fa-users"></i> Komunitas Fans Aktif</li>
+              </ul>
+            </div>
+
+            <!-- Kanan: Gambar -->
+            <div class="col right">
+              <figure class="hero-image">
+                <img src="img/home.png" alt="foto grup" />
                 <figcaption>NCT Dream bersama NCTzens</figcaption>
-            </figure>
-            
-            <div>
-                <a href="#register">Gabung Sekarang</a>
+              </figure>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div>
-                <h2>Kenapa DreamConnect?</h2>
-                <ul>
-                    <li>Koleksi Album & Lagu Lengkap</li>
-                    <li>Info Event & Konser Terbaru</li>
-                    <li>Komunitas Fans Aktif</li>
-                </ul>
-            </div>
-        </section>
+      <!-- Fitur utama -->
+      <section id="fitur" class="fitur">
+        <div class="container">
+          <h2 class="fitur-title">Fitur Utama</h2>
+        </div>
+        
+          <section id="album" class="album">
+            <h3 class="album-section-title">Album & Lagu</h3>
 
-        <section id="fitur">
-            <h2>Fitur Utama</h2>
-            <section id="album">
-                <h3>Album & Lagu</h3>
-                <article class="album">
-                    <h3>Hot Sauce (2021)</h3>
-                    <img src="img/albumHotsauce.jpg" alt="Cover Album Hot Sauce" width="250">
-                    <h4>Tracklist:</h4>
-                    <ol>
-                        <li>Hot Sauce (Title Track)</li>
-                        <li>Dive Into You</li>
-                        <li>Diggity</li>
-                        <li>My Youth</li>
-                        <li>Rocket</li>
-                        <li>Countdown (3, 2, 1)</li>
-                        <li>ANL</li>
-                        <li>Irreplaceable</li>
-                        <li>Be There For You</li>
-                        <li>Rainbow</li>
+            <div class="album-grid">
+              <!-- Album 1 -->
+              <article class="album-card">
+                <img src="img/albumHotsauce.jpg" alt="Cover Album Hot Sauce" class="album-cover" />
+                <div class="album-info">
+                  <h3>Hot Sauce (2021)</h3>
+
+                  <details class="tracklist-container">
+                    <summary>Tracklist</summary>
+                    <ol class="tracklist">
+                      <li><a href="https://open.spotify.com/track/6B8MM3PVQtUbZLay7tP7er?si=6aa9b404b2bb4c35" target="_blank">Hot Sauce (Title Track)</a></li>
+                      <li><a href="https://open.spotify.com/track/0z3ZZ2JKusRpapstADTxVf?si=3a7eba4667974749" target="_blank">Dive Into You</a></li>
+                      <li><a href="https://open.spotify.com/track/2JEaSgRiEra5OQrZlnyqXG?si=956896900d6d4ba4" target="_blank">Diggity</a></li>
+                      <li><a href="https://open.spotify.com/track/3vG5ilGpaYA2MhVtyTORF1?si=138df4399f6d4e6f" target="_blank">My Youth</a></li>
+                      <li><a href="https://open.spotify.com/track/2hr3geQBSViX9Oi2OsnY3c?si=2fd25e4cad574066" target="_blank">Rocket</a></li>
+                      <li><a href="https://open.spotify.com/track/5ngy93w3QaZl3mN9YinIux?si=7af33ea3c30b49a3" target="_blank">Countdown (3, 2, 1)</a></li>
+                      <li><a href="https://open.spotify.com/track/3zIvzPKUUdSpDCm1uua6Be?si=bbaea0a5986c479b" target="_blank">ANL</a></li>
+                      <li><a href="https://open.spotify.com/track/3EFNqXf54nYARxXm5b7kGT?si=8638d238f5204103" target="_blank">Irreplaceable</a></li>
+                      <li><a href="https://open.spotify.com/track/65aiZeH9Uld7iFC4w24tiR?si=fa29127f852740c2" target="_blank">Be There For You</a></li>
+                      <li><a href="https://open.spotify.com/track/2TyDgN8q5NgOuiR8yYyBYj?si=09aafeefb7704a8f" target="_blank">Rainbow</a></li>
                     </ol>
-                    <h4>Music Video:</h4>
-                    <iframe width="400" height="225" 
-                        src="https://www.youtube.com/embed/PkKnp4SdE-w?si=RZ4vKFUTsYdS0uU-" 
-                        title="Hot Sauce MV" 
-                        frameborder="0" 
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                </article>
-            </section>
-            
-            <section id="event">
-                <h3>Event & Konser</h3>
-                <p>Ikuti jadwal event, konser, dan fan meeting terbaru.</p>
-                <article>
-                    <h3>The Dream Show 4 : Dreamscape</h3>
-                    <img src="img/konser4.jpg" alt="Poster The Dream Show 4" width="200">
-                    <p><strong>Tanggal:</strong> 28-30 Juni 2024</p>
-                    <p><strong>Lokasi:</strong> Gocheok Sky Dome, Seoul</p>
-                    <p>Konser skala besar ke-4 NCT Dream dengan konsep futuristik dan interaktif.</p>
-                    
-                    <iframe width="560" height="315" 
-                        src="https://www.youtube.com/embed/jszXE5bySRY?si=mInj2fwo-DIBK5md" 
-                        title="NCT DREAM The Dream Show 4 Teaser" 
-                        frameborder="0" 
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                    
-                    <br><br>
-                    <a href="https://www.ticketmaster.com" target="_blank">Beli Tiket</a>
-                </article>
-            </section>
+                  </details>
 
-            <section id="postingan">
-                <article>
-                    <h3>Postingan Fans</h3>
-                    <p>Bagikan cerita, fan art, dan pengalamanmu bersama NCT Dream.</p>
-                    <p><a href="#login">Login untuk memulai!</a></p>
-                </article>
-            </section>
-        </section>
+                  <h4>Music Video:</h4>
+                  <a href="#mv1" class="mv-link">Tonton MV</a>
+                </div>
+              </article>
 
-        <section id="galeri">
-            <h2>Galeri NCT Dream</h2>
-            <p>Kumpulan momen spesial NCT Dream</p>
-            <figure>
-                <img src="img/theDreamShow2.jpg" alt="The Dream Show 2" width="300">
-                <figcaption>The Dream Show 2</figcaption>
-            </figure>
-            <figure>
-                <img src="img/helloFuture.jpg" alt="Album Hello Future" width="300">
-                <figcaption>Album Hello Future</figcaption>
-            </figure>
-            <figure>
-                <img src="img/galeri1.jpg" alt="Konten 7 Dream" width="300">
-                <figcaption>Konten 7 Dream</figcaption>
-            </figure>
-            <figure>
-                <img src="img/galeri2.jpg" alt="Pemotretan" width="300">
-                <figcaption>Pemotretan</figcaption>
-            </figure>
-        </section>
+              <!-- Album 2 -->
+              <article class="album-card">
+                <img src="img/istj.png" alt="Cover Album ISTJ" class="album-cover" />
+                <div class="album-info">
+                  <h3>ISTJ (2023)</h3>
 
-        <section id="kontak">
-            <h2>Kontak Kami</h2>
-            <p>Punya saran, pertanyaan, atau ingin kolaborasi? Kirim pesanmu di sini</p>
-            <form>
-                <label for="nama">Nama:</label><br>
-                <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda"><br><br>
+                  <details class="tracklist-container">
+                    <summary>Tracklist</summary>
+                    <ol class="tracklist">
+                      <li><a href="https://open.spotify.com/track/6j268AN4RJXNyFNeFUfB50?si=2263d73bca3d4bf1" target="_blank">ISTJ (Title Track)</a></li>
+                      <li><a href="https://open.spotify.com/track/1DYPrEzbmlOYbeTDkCDsaA?si=82e9a3869c284373" target="_blank">Broken Melodies</a></li>
+                      <li><a href="https://open.spotify.com/track/7n4vU9BEfT1cEIiSWRg54K?si=d2c9afd438884a3b" target="_blank">Yogurt Shake</a></li>
+                      <li><a href="https://open.spotify.com/track/4dUGCIomJUVpPgKDYUFGJD?si=7dcb8af9021f409c" target="_blank">Skateboard</a></li>
+                      <li><a href="https://open.spotify.com/track/5UbNtsxuM2gjstY1mdORVb?si=946357f3bb154dc2" target="_blank">파랑 (Blue Wave)</a></li>
+                      <li><a href="https://open.spotify.com/track/1GmZg0gdOochQfpwL2I3NS?si=ee48dbd2a14441e8" target="_blank">Poison</a></li>
+                      <li><a href="https://open.spotify.com/track/0U0uwLHxYZ4VQf1hiPEVas?si=cab4507c43ad4ec9" target="_blank">SOS</a></li>
+                      <li><a href="https://open.spotify.com/track/55j5oZuhICIY4Clr4bq3Qi?si=75c50bbdcbe24a75" target="_blank">Pretzel (♡)</a></li>
+                      <li><a href="https://open.spotify.com/track/4ZCtHT1jXVScJ6yF0UfK2v?si=67f4dc9c00ea4270" target="_blank">제자리 걸음 (Starry Night)</a></li>
+                      <li><a href="https://open.spotify.com/track/56BFdDnRlfTnSLk5d7Ukw1?si=612d1fca0f37415f" target="_blank">Like We Just Met</a></li>
+                    </ol>
+                  </details>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="nama@email.com"><br><br>
+                  <h4>Music Video:</h4>
+                  <a href="#mv2" class="mv-link">Tonton MV</a>
+                </div>
+              </article>
+            </div>
+          </section>
 
-                <label for="subjek">Subjek:</label><br>
-                <input type="text" id="subjek" name="subjek" placeholder="Judul pesan"><br><br>
+        <!-- Lightbox MV -->
+        <div id="mv1" class="mv-lightbox">
+          <a href="#" class="close">&times;</a>
+          <iframe
+            src="https://www.youtube.com/embed/PkKnp4SdE-w?si=RZ4vKFUTsYdS0uU-"
+            title="Hot Sauce MV"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
 
-                <label for="pesan">Pesan:</label><br>
-                <textarea name="pesan" id="pesan" rows="5" cols="40" placeholder="Tulis pesan Anda"></textarea><br><br>
+        <div id="mv2" class="mv-lightbox">
+          <a href="#" class="close">&times;</a>
+          <iframe
+            src="https://www.youtube.com/embed/XDnGdcgd3Pc?si=AAB_Qb6EbGcb19xb"
+            title="ISTJ MV"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
 
-                <label for="kategori">Kategori:</label><br>
-                <select name="kategori" id="kategori">
+          <!-- Event Section -->
+          <section id="event" class="event">
+            <h3 class="event-section-title">Event & Konser</h3>
+            <p class="event-caption">Ikuti jadwal event, konser, dan fan meeting terbaru.</p>
+            <div class="event-grid">
+              <!-- Event 1 -->
+              <article class="event-card">
+                <img src="img/event1.jpg" alt="Poster The Dream Show 4" class="event-cover" />
+                <div class="event-info">
+                  <h3>The Dream Show 4 : Dreamscape</h3>
+                  <p><strong>Tanggal:</strong> 28-30 Juni 2024</p>
+                  <p><strong>Lokasi:</strong> Gocheok Sky Dome, Seoul</p>
+                  <p>Konser skala besar ke-4 NCT Dream dengan konsep futuristik dan interaktif.</p>
+                  <iframe
+                    src="https://www.youtube.com/embed/jszXE5bySRY?si=mInj2fwo-DIBK5md"
+                    title="NCT DREAM The Dream Show 4 Teaser"
+                    frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <br /><br />
+                  <a href="https://www.ticketmaster.com" target="_blank" class="mv-link">Beli Tiket</a>
+                </div>
+              </article>
+
+              <article class="event-card">
+                <img src="img/event2.jpg" alt="Poster The Dream Show 3 VR" class="event-cover" />
+                <div class="event-info">
+                  <h3>The Dream Show 3 in VR</h3>
+                  <p><strong>Tanggal:</strong> 26 September 2025</p>
+                  <p><strong>Lokasi:</strong> Meta Horizon VR</p>
+                  <p>Konser virtual interaktif NCT Dream di platform Meta Horizon, menampilkan pengalaman VR penuh futuristik.</p>
+                  <iframe
+                    src="https://www.youtube.com/embed/e0oLERTyLlU?si=2n2Y-AjT668SLU4e"
+                    title="The Dream Show 3 Rekap Video"
+                    frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <br /><br />
+                  <a href="https://play.google.com/store/apps/details?id=com.oculus.twilight&pcampaignid=web_share" target="_blank" class="mv-link">Tonton Di Sini</a>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+
+          <!-- SECTION POSTINGAN -->
+          <section class="postingan">
+            <h2 class="postingan-title"> Postingan Fans </h2>
+            <p class="postingan-caption">Bagikan cerita, fan art, dan pengalamanmu bersama NCT Dream.</p>
+
+            <div class="postingan-grid">
+              <!-- Card 1 -->
+              <article class="postingan-card">
+                <div class="postingan-icon">🎨</div>
+                <h3>Fan Art</h3>
+                <p>Tunjukkan kreativitasmu lewat gambar, edit, atau ilustrasi karya sendiri.</p>
+              </article>
+
+              <!-- Card 2 -->
+              <article class="postingan-card">
+                <div class="postingan-icon">📝</div>
+                <h3>Cerita & Pengalaman</h3>
+                <p>Ceritakan momen tak terlupakanmu bersama NCT Dream, konser, atau fan meeting!</p>
+              </article>
+
+              <!-- Card 3 -->
+              <article class="postingan-card">
+                <div class="postingan-icon">📸</div>
+                <h3>Foto & Video</h3>
+                <p>Bagikan foto-foto, fancam, atau koleksi merch favoritmu di sini.</p>
+              </article>
+            </div>
+
+            <!-- Call To Action -->
+            <div class="postingan-login">
+              <p>✨ Yuk, jadi bagian dari komunitas Dreamzen! ✨</p>
+              <a href="#login" class="btn-login">Login untuk memulai 🚀</a>
+            </div>
+          </section>
+      </section>
+
+      <section id="galeri" class="galeri">
+        <div class="container">
+          <h2 class="galeri-title">Galeri NCT Dream</h2>
+          <p class="galeri-desc">Kumpulan momen spesial NCT Dream</p>
+          <div class="galeri-grid">
+            <a href="#img1" class="galeri-item">
+              <img src="img/theDreamShow2.jpg" alt="The Dream Show 2" />
+              <div class="overlay">
+                <div class="overlay-text">The Dream Show 2</div>
+              </div>
+            </a>
+            <a href="#img2" class="galeri-item">
+              <img src="img/helloFuture.jpg" alt="Album Hello Future" />
+              <div class="overlay">
+                <div class="overlay-text">Album Hello Future</div>
+              </div>
+            </a>
+            <a href="#img3" class="galeri-item">
+              <img src="img/galeri1.jpg" alt="Konten 7 Dream" />
+              <div class="overlay">
+                <div class="overlay-text">Konten 7 Dream</div>
+              </div>
+            </a>
+            <a href="#img4" class="galeri-item">
+              <img src="img/galeri2.jpg" alt="Pemotretan" />
+              <div class="overlay">
+                <div class="overlay-text">Pemotretan</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lightbox  -->
+        <div id="img1" class="lightbox">
+          <a href="#" class="close">&times;</a>
+          <img src="img/theDreamShow2.jpg" alt="The Dream Show 2" />
+          <div class="caption">The Dream Show 2</div>
+        </div>
+        <div id="img2" class="lightbox">
+          <a href="#" class="close">&times;</a>
+          <img src="img/helloFuture.jpg" alt="Album Hello Future" />
+          <div class="caption">Album Hello Future</div>
+        </div>
+        <div id="img3" class="lightbox">
+          <a href="#" class="close">&times;</a>
+          <img src="img/galeri1.jpg" alt="Konten 7 Dream" />
+          <div class="caption">Konten 7 Dream</div>
+        </div>
+        <div id="img4" class="lightbox">
+          <a href="#" class="close">&times;</a>
+          <img src="img/galeri2.jpg" alt="Pemotretan" />
+          <div class="caption">Pemotretan</div>
+        </div>
+      </section>
+
+      <section id="kontak" class="kontak">
+        <div class="container">
+          <h2 class="kontak-title">Kontak Kami</h2>
+          <p class="kontak-subtitle"><i class="fa fa-envelope"></i> Punya saran, pertanyaan, atau ingin kolaborasi? Kirim pesanmu di sini 🎶</p>
+
+          <div class="row">
+            <!-- Form -->
+            <div class="col form-col">
+              <form>
+                <div class="form-group">
+                  <label for="nama"><i class="fa fa-user"></i> Nama</label>
+                  <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="email"><i class="fa fa-envelope-open"></i> Email</label>
+                  <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="subjek"><i class="fa fa-tag"></i> Subjek</label>
+                  <input type="text" id="subjek" name="subjek" placeholder="Judul pesan" />
+                </div>
+
+                <div class="form-group">
+                  <label for="pesan"><i class="fa fa-comment-dots"></i> Pesan</label>
+                  <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="kategori"><i class="fa fa-list"></i> Kategori</label>
+                  <select name="kategori" id="kategori">
                     <option value="saran">Saran</option>
                     <option value="pertanyaan">Pertanyaan</option>
                     <option value="kolaborasi">Kolaborasi</option>
                     <option value="lainnya">Lainnya</option>
-                </select><br><br>
+                  </select>
+                </div>
 
-                <button type="submit">Kirim</button>
-                <button type="reset">Reset</button>
-            </form>
-
-            <div>
-                <h3>Hubungi kami</h3>
-                <p>Email: dreamconnect@gmail.com</p>
-                <p>Instagram : @dreamconnect_id</p>
-                <p>X: @dreamconnect_id</p>
+                <div class="form-buttons">
+                  <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Kirim</button>
+                  <button type="reset" class="btn btn-secondary"><i class="fa fa-undo"></i> Reset</button>
+                </div>
+              </form>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-        <div>
-            <h3>Dream Connect</h3>
-            <p>Portal interaktif untuk berbagi impian, motivasi, dan inspirasi bersama komunitas.</p>
+    <footer class="footer-main">
+      <div class="footer-header">DreamConnect</div>
+
+      <div class="footer-body">
+        <div class="footer-section">
+          <h4>Tentang</h4>
+          <p>Portal interaktif untuk berbagi impian, motivasi, dan inspirasi bersama komunitas.</p>
         </div>
 
-        <div>
-            <h4>Ikuti kami</h4>
-            <p>Email: dreamconnect@gmail.com</p>
-            <p>Instagram : @dreamconnect_id</p>
-            <p>X: @dreamconnect_id</p>
+        <div class="footer-section">
+          <h4>Ikuti kami</h4>
+          <p>Email: dreamconnect@gmail.com</p>
+          <p>Instagram : @dreamconnect_id</p>
+          <p>X: @dreamconnect_id</p>
         </div>
 
-        <div>
-            <p>&copy; 2025 DreamConnect - Portal Fans NCT Dream</p>
-            <p>
-                Referensi Desain: <br>
-                <a href="https://nctdream.stanlyapp.com/fan-club" target="_blank">StanlyApp</a><br>
-                <a href="https://pin.it/1kuea9t1G" target="_blank">Pinterest</a>
-            </p>
-        </div>
-        
+        <div class="footer-section">
+          <h4>Referensi</h4>
+          <p>
+            <a href="https://nctdream.stanlyapp.com/fan-club" target="_blank">StanlyApp</a><br />
+            <a href="https://pin.it/1kuea9t1G" target="_blank">Pinterest</a>
+          </p>
+        </div><br>
+
+      </div>
+      <div class="footer-made"><p>&copy; 2025 DreamConnect - Portal Fans NCT Dream</p></div>
     </footer>
-</body>
+  </body>
 </html>
