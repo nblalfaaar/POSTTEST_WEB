@@ -19,21 +19,29 @@
   <body>
     <header>
       <h4>DreamConnect</h4>
-      <nav class="navbar">
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link active" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#fitur">Fitur</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#galeri">Galeri</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#kontak">Kontak</a>
-          </li>
-        </ul>
+
+      <button class="hamburger" id="hamburger">&#9776;</button>
+
+      <nav class="navbar" id="navbar">
+        <div class="nav-container">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fitur">Fitur</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeri">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cuaca">Rekomendasi Musik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Kontak</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -245,54 +253,53 @@
           <h2 class="galeri-title">Galeri NCT Dream</h2>
           <p class="galeri-desc">Kumpulan momen spesial NCT Dream</p>
           <div class="galeri-grid">
-            <a href="#img1" class="galeri-item">
+            <div class="galeri-item">
               <img src="img/theDreamShow2.jpg" alt="The Dream Show 2" />
               <div class="overlay">
                 <div class="overlay-text">The Dream Show 2</div>
               </div>
-            </a>
-            <a href="#img2" class="galeri-item">
-              <img src="img/helloFuture.jpg" alt="Album Hello Future" />
+            </div>
+            <div class="galeri-item">
+              <img src="img/hellofuture.png" alt="Album Hello Future" />
               <div class="overlay">
                 <div class="overlay-text">Album Hello Future</div>
               </div>
-            </a>
-            <a href="#img3" class="galeri-item">
+            </div>
+            <div class="galeri-item">
               <img src="img/galeri1.jpg" alt="Konten 7 Dream" />
               <div class="overlay">
                 <div class="overlay-text">Konten 7 Dream</div>
               </div>
-            </a>
-            <a href="#img4" class="galeri-item">
+            </div>
+            <div class="galeri-item">
               <img src="img/galeri2.jpg" alt="Pemotretan" />
               <div class="overlay">
                 <div class="overlay-text">Pemotretan</div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
+      </section>
 
-        <!-- Lightbox  -->
-        <div id="img1" class="lightbox">
-          <a href="#" class="close">&times;</a>
-          <img src="img/theDreamShow2.jpg" alt="The Dream Show 2" />
-          <div class="caption">The Dream Show 2</div>
-        </div>
-        <div id="img2" class="lightbox">
-          <a href="#" class="close">&times;</a>
-          <img src="img/helloFuture.jpg" alt="Album Hello Future" />
-          <div class="caption">Album Hello Future</div>
-        </div>
-        <div id="img3" class="lightbox">
-          <a href="#" class="close">&times;</a>
-          <img src="img/galeri1.jpg" alt="Konten 7 Dream" />
-          <div class="caption">Konten 7 Dream</div>
-        </div>
-        <div id="img4" class="lightbox">
-          <a href="#" class="close">&times;</a>
-          <img src="img/galeri2.jpg" alt="Pemotretan" />
-          <div class="caption">Pemotretan</div>
-        </div>
+      <section id="cuaca" class="weather-section">
+          <div class="container">
+              <h2 class="weather-title">Rekomendasi Musik Berdasarkan Cuaca di Indonesia</h2>
+              <p class="weather-desc">Dapatkan rekomendasi lagu NCT Dream yang cocok dengan cuaca di lokasimu! 🌈</p>
+              
+              <div class="weather-content" id="weatherContainer">
+                  <div class="weather-loading">
+                      <div class="weather-spinner"></div>
+                      <p>Mendeteksi lokasi dan mengecek cuaca...</p>
+                  </div>
+              </div>
+              
+              <div class="weather-footer">
+                  <p class="weather-note">🎵 Setiap cuaca punya lagu NCT Dream yang pas! Biarkan musik menemani harimu.</p>
+                  <button onclick="getCurrentLocation()" class="location-button">
+                      📍 Deteksi Ulang Lokasi
+                  </button>
+              </div>
+          </div>
       </section>
 
       <section id="kontak" class="kontak">
@@ -372,5 +379,7 @@
       </div>
       <div class="footer-made"><p>&copy; 2025 DreamConnect - Portal Fans NCT Dream</p></div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
